@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(187,225,247);
+    margin: auto;
+    width: 80.8964%;
+    font-family: 'LXGW WenKai', sans-serif;
+    font-size: large;
+}
+.headbar {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.headbar img{
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+.headbar h1{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 27px;
+    margin-right: 18px;
+    font-size: 47px;
+}
+.headbar .nav {
+    display: flex;
+    margin-left: auto;
+    margin: auto;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.headbar .nav *{
+    margin-left: 17.233px;
+    font-size: 22px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    word-break: break-all;
+}
+li a{
+    color: #c60002;
+}
