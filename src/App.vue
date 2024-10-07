@@ -8,10 +8,12 @@ export default class App extends Vue {}
 
 <template>
   <Avatar />
+  <router-view />
 </template>
 
 <style lang="scss">
 @import '@/css/mocha';
+@import '@/css/global';
 
 * {
   color: $text;

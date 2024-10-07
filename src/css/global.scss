@@ -1,0 +1,23 @@
+@import '@/css/mocha';
+
+a {
+  color: $text;
+  text-decoration: none;
+
+  &.router-link-exact-active {
+    color: $rosewater;
+  }
+
+  &:active {
+    color: $text;
+    text-decoration: none;
+  }
+}
+
+hr {
+  display: block;
+  height: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-image: repeating-linear-gradient(45deg, $pink 0, $pink 20px, $maroon 20px, $maroon 40px) 0.5;
+}
