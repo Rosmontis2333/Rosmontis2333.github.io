@@ -9,3 +9,10 @@ export interface Contact {
   url: string;
   id: string;
 }
+
+export interface Friend {
+  image: string;
+  name: string;
+  url: string;
+  description: string;
+}
