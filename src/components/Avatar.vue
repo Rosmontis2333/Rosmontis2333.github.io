@@ -25,6 +25,7 @@ export default class Avatar extends Vue {
       </div>
     </div>
   </div>
+  <hr/>
 </template>
 
 <style lang="scss">
