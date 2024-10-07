@@ -38,7 +38,7 @@ export default class About extends Vue {
   justify-content: left;
   width: fit-content;
   height: fit-content;
-  margin: 1rem 1rem;
+  margin: 1rem auto;
   gap: 0.5rem;
 
   .contact {
