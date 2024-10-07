@@ -21,7 +21,7 @@ export default class Avatar extends Vue {
     <div class="right">
       <h1>Rosmontis Here!</h1>
       <div class="links">
-        <a v-for="l of li" v-bind:href="l.url" v-text="l.name" :key="l.name" />
+        <router-link v-for="l of li" :to="l.url" :key="l.name" >{{l.name}}</router-link>
       </div>
     </div>
   </div>
