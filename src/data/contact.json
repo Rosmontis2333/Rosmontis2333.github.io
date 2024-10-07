@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Telegram",
+    "icon": "mynaui:brand-telegram",
+    "url": "https://t.me/Rosmontis233",
+    "id": "@Rosmontis233"
+  },
+  {
+    "name": "Twitter",
+    "icon": "mynaui:brand-twitter",
+    "url": "https://x.com/Rosmontis233",
+    "id": "@Rosmontis233"
+  },
+  {
+    "name": "Github",
+    "icon": "mynaui:brand-github",
+    "url": "https://github.com/Rosmontis2333",
+    "id": "@Rosmontis2333"
+  },
+  {
+    "name": "Mail",
+    "icon": "iconoir:mail",
+    "url": "https://keys.openpgp.org/vks/v1/by-fingerprint/3CFEFAB3CAC1CC735D67DF41BFFB77088E6643DC",
+    "id": "Mail with PGP"
+  }
+]

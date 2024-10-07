@@ -1,0 +1,41 @@
+@import "./mocha";
+
+.markdown {
+  color: $text;
+  text-align: justify;
+  text-justify: auto;
+
+
+  h1, h2 {
+    color: $flamingo;
+    font-size: 2rem;
+    border-bottom: 1px solid $flamingo;
+  }
+
+  p {
+    margin: 0.65em 0;
+    line-height: 1.6;
+  }
+
+  li {
+    font-size: 1em;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+
+    &:active {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  blockquote {
+    background-color: $overlay1;
+    color: $text;
+    border-left: 2px solid $teal;
+    border-radius: 5px;
+    margin: 0;
+  }
+}
