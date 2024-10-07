@@ -23,6 +23,7 @@ export default class About extends Vue {
       <a :href="contact.url" target="_blank">{{contact.id}}</a>
     </div>
   </div>
+  <hr />
   <div class="markdown" v-html="md" />
 </template>
 
