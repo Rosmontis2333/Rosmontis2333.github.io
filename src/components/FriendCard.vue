@@ -53,6 +53,10 @@ export default class FriendCard extends Vue {
     justify-content: center;
     align-items: baseline;
 
+    p {
+      margin: auto 0.1rem;
+    }
+
     .name {
       font-size: 1.2rem;
       font-weight: bold;

@@ -11,8 +11,8 @@ export default class Friends extends Vue {
 
 <template>
   <FriendList />
-  <div class="markdown" v-html="md" />
   <hr/>
+  <div class="markdown" v-html="md" />
 </template>
 
 <style lang="scss">
