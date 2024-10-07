@@ -29,6 +29,9 @@ export default class Avatar extends Vue {
 </template>
 
 <style lang="scss">
+@import '@/css/mocha';
+@import '@/css/motion';
+
 .avatar {
   display: flex;
   align-items: center;
@@ -68,6 +71,11 @@ export default class Avatar extends Vue {
       text-align: start;
       flex: 1;
       padding-top: 1.5rem;
+      transition: all 0.5s $ease-in-out-cric;
+
+      &:hover {
+        filter: drop-shadow(0px 0px 5px $lavender);
+      }
     }
 
     .links {
@@ -77,7 +85,15 @@ export default class Avatar extends Vue {
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      width: 50%
+      width: 50%;
+
+      a {
+        transition: all 0.5s $ease-in-out-cric;
+
+        &:hover {
+          filter: drop-shadow(0px 0px 2px $flamingo);
+        }
+      }
     }
   }
 }
