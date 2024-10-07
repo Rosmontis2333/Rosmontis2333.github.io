@@ -1,9 +1,15 @@
 <script lang="ts">
+import { Link } from '@/logic/data'
 import {Vue, Component} from 'vue-facing-decorator';
+import links from '@/data/links.json';
 
 @Component({})
 export default class Avatar extends Vue {
+  li = [] as Link[]
 
+  mounted() {
+    this.li = links as Link[];
+  }
 }
 </script>
 
@@ -14,6 +20,9 @@ export default class Avatar extends Vue {
     </div>
     <div class="right">
       <h1>Rosmontis Here!</h1>
+      <div class="links">
+        <a v-for="l of li" v-bind:href="l.url" v-text="l.name" :key="l.name" />
+      </div>
     </div>
   </div>
 </template>
@@ -31,26 +40,43 @@ export default class Avatar extends Vue {
     display: block;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 100px;
     margin: 0.5rem auto;
+    padding: 2rem;
 
     img {
       object-fit: contain;
-      width: 100%;
-      height: 100%;
+      width: 200px;
+      height: 200px;
       margin: auto;
+      border-radius: 100px;
     }
   }
 
   .right {
     flex: 2;
-    display: block;
+    display: flex;
     width: fit-content;
     height: 200px;
-    padding: calc(100px - 1rem) 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
     h1 {
       font-size: 2rem;
+      text-align: start;
+      flex: 1;
+      padding-top: 1.5rem;
+    }
+
+    .links {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%
     }
   }
 }

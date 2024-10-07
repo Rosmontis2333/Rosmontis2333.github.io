@@ -1,0 +1,15 @@
+@import '@/css/mocha';
+
+a {
+  color: $text;
+  text-decoration: none;
+
+  &.router-link-exact-active {
+    color: $rosewater;
+  }
+
+  &:active {
+    color: $text;
+    text-decoration: none;
+  }
+}
