@@ -24,6 +24,7 @@ export default class FriendCard extends Vue {
 
 <style lang="scss">
 @import "@/css/mocha";
+@import "@/css/motion";
 
 .card {
   background-color: $overlay0;
@@ -43,6 +44,11 @@ export default class FriendCard extends Vue {
     height: 100px;
     border-radius: 50px;
     object-fit: contain;
+    transition: all 0.5s $ease-out-back;
+
+    &:hover {
+      rotate: 360deg;
+    }
   }
 
   .content {
