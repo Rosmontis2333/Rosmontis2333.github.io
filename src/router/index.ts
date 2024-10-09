@@ -4,7 +4,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: () => import("../views/Home.vue")
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/about',
@@ -19,8 +19,8 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/:pathMatch(.*)*',
     name: '404',
-    component: () => import("../views/404.vue")
-  },
+    component: () => import('../views/404.vue')
+  }
 ]
 
 export const router = createRouter({

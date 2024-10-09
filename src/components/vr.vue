@@ -1,14 +1,12 @@
 <script lang="ts">
-import { Vue, Component } from 'vue-facing-decorator';
+import { Component, Vue } from 'vue-facing-decorator'
 
 @Component({})
-export default class vr extends Vue {
-
-}
+export default class vr extends Vue {}
 </script>
 
 <template>
-  <div class="vr"/>
+  <div class="vr" />
 </template>
 
 <style lang="scss">
@@ -20,6 +18,13 @@ export default class vr extends Vue {
   height: 10rem;
   border-style: solid;
   border-width: 1px;
-  border-image: repeating-linear-gradient(45deg, $lavender 0, $lavender 20px, $blue 20px, $blue 40px) 0.5;
+  border-image: repeating-linear-gradient(
+      45deg,
+      $lavender 0,
+      $lavender 20px,
+      $blue 20px,
+      $blue 40px
+    )
+    0.5;
 }
 </style>

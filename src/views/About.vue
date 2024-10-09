@@ -1,13 +1,13 @@
 <script lang="ts">
-import { Vue, Component } from 'vue-facing-decorator'
-import aboutMarkdown from '@/assets/about.md';
+import aboutMarkdown from '@/assets/about.md'
 import ContactList from '@/components/ContactList.vue'
+import { Component, Vue } from 'vue-facing-decorator'
 
 @Component({
-  components: {ContactList}
+  components: { ContactList }
 })
 export default class About extends Vue {
-  md = aboutMarkdown;
+  md = aboutMarkdown
 }
 </script>
 
@@ -17,5 +17,4 @@ export default class About extends Vue {
   <div class="markdown" v-html="md" />
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

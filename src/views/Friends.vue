@@ -1,17 +1,17 @@
 <script lang="ts">
-import FriendList from '@/components/FriendList.vue';
-import { Vue, Component } from 'vue-facing-decorator';
-import friendMarkdown from '@/assets/friends.md';
+import friendMarkdown from '@/assets/friends.md'
+import FriendList from '@/components/FriendList.vue'
+import { Component, Vue } from 'vue-facing-decorator'
 
-@Component({components: {FriendList}})
+@Component({ components: { FriendList } })
 export default class Friends extends Vue {
-  md = friendMarkdown;
+  md = friendMarkdown
 }
 </script>
 
 <template>
   <FriendList />
-  <hr/>
+  <hr />
   <div class="markdown" v-html="md" />
 </template>
 

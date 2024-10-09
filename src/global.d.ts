@@ -1,3 +1,3 @@
-declare module "*.vue"
-declare module "*.json"
-declare module "*.md"
+declare module '*.vue'
+declare module '*.json'
+declare module '*.md'

@@ -1,22 +1,29 @@
 <script lang="ts">
 import FriendCard from '@/components/FriendCard.vue'
+import friends from '@/data/friends.json'
 import { Friend } from '@/logic/data'
-import { Vue, Component } from 'vue-facing-decorator'
-import friends from '@/data/friends.json';
+import { Component, Vue } from 'vue-facing-decorator'
 
-@Component({components: {FriendCard}})
+@Component({ components: { FriendCard } })
 export default class FriendList extends Vue {
   fi = [] as Friend[]
 
   mounted() {
-    this.fi = friends as Friend[];
+    this.fi = friends as Friend[]
   }
 }
 </script>
 
 <template>
   <div class="friend-list">
-    <FriendCard v-for="f of fi" :key="f.name" :image="f.image" :name="f.name" :url="f.url" :description="f.description"/>
+    <FriendCard
+      v-for="f of fi"
+      :key="f.name"
+      :image="f.image"
+      :name="f.name"
+      :url="f.url"
+      :description="f.description"
+    />
   </div>
 </template>
 

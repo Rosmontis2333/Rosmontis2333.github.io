@@ -1,10 +1,10 @@
 <script lang="ts">
-import { Vue, Component } from 'vue-facing-decorator'
 import homeMarkdown from '@/assets/home.md'
+import { Component, Vue } from 'vue-facing-decorator'
 
 @Component({})
 export default class Home extends Vue {
-  md = homeMarkdown;
+  md = homeMarkdown
 }
 </script>
 
@@ -15,5 +15,4 @@ export default class Home extends Vue {
 <style lang="scss">
 @import '@/css/markdown.scss';
 @import '@/css/mocha';
-
 </style>

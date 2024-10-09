@@ -1,10 +1,8 @@
 <script lang="ts">
-import { Vue, Component } from 'vue-facing-decorator'
+import { Component, Vue } from 'vue-facing-decorator'
 
 @Component({})
-export default class _04 extends Vue {
-
-}
+export default class _04 extends Vue {}
 </script>
 
 <template>
