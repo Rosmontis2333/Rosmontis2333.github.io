@@ -27,7 +27,7 @@ export default class FriendList extends Vue {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 25px;
 }
