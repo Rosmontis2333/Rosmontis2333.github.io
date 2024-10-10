@@ -3,6 +3,7 @@ import { Link } from '@/logic/data'
 import {Vue, Component} from 'vue-facing-decorator';
 import links from '@/data/links.json';
 
+
 @Component({})
 export default class Avatar extends Vue {
   li = [] as Link[]

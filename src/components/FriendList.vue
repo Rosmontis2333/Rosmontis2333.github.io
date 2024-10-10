@@ -30,5 +30,6 @@ export default class FriendList extends Vue {
   justify-content: space-around;
   align-items: center;
   gap: 25px;
+  flex-grow: 1;
 }
 </style>
