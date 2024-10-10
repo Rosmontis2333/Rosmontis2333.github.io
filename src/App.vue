@@ -1,8 +1,8 @@
 <script lang="ts">
-import {Vue, Component} from 'vue-facing-decorator';
-import Avatar from './components/Avatar.vue';
+import { Component, Vue } from 'vue-facing-decorator'
+import Avatar from './components/Avatar.vue'
 
-@Component({components: {Avatar}})
+@Component({ components: { Avatar } })
 export default class App extends Vue {}
 </script>
 

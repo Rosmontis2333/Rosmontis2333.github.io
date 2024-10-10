@@ -1,7 +1,7 @@
 <script lang="ts">
+import links from '@/data/links.json'
 import { Link } from '@/logic/data'
-import {Vue, Component} from 'vue-facing-decorator';
-import links from '@/data/links.json';
+import { Component, Vue } from 'vue-facing-decorator'
 
 
 @Component({})
@@ -9,7 +9,7 @@ export default class Avatar extends Vue {
   li = [] as Link[]
 
   mounted() {
-    this.li = links as Link[];
+    this.li = links as Link[]
   }
 }
 </script>
@@ -22,11 +22,11 @@ export default class Avatar extends Vue {
     <div class="right">
       <h1>Rosmontis Here!</h1>
       <div class="links">
-        <router-link v-for="l of li" :to="l.url" :key="l.name" >{{l.name}}</router-link>
+        <router-link v-for="l of li" :to="l.url" :key="l.name">{{ l.name }}</router-link>
       </div>
     </div>
   </div>
-  <hr/>
+  <hr />
 </template>
 
 <style lang="scss">

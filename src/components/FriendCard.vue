@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-facing-decorator'
+import { Component, Prop, Vue } from 'vue-facing-decorator'
 
 @Component({})
 export default class FriendCard extends Vue {
@@ -13,7 +13,7 @@ export default class FriendCard extends Vue {
 <template>
   <div class="card">
     <a :href="url" target="_blank">
-      <img :src="image" :alt="name"/>
+      <img :src="image" :alt="name" />
     </a>
     <div class="content">
       <p class="name">{{ name }}</p>
@@ -23,8 +23,8 @@ export default class FriendCard extends Vue {
 </template>
 
 <style lang="scss">
-@import "@/css/mocha";
-@import "@/css/motion";
+@import '@/css/mocha';
+@import '@/css/motion';
 
 .card {
   background-color: $overlay0;
