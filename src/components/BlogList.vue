@@ -61,7 +61,7 @@ export default class BlogList extends Vue {
     margin: 0 auto;
     border-bottom: 1px solid $rosewater;
     border-top: 1px solid $rosewater;
-    padding: 0.2rem;
+    padding: 0.2rem 2rem;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: start;
