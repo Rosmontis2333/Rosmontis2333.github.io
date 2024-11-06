@@ -28,6 +28,12 @@ const routes: Array<RouteRecordRaw> = [
     props: true
   },
   {
+    path: '/docs/:name',
+    name: 'docs',
+    component: () => import('../views/SingleBlog.vue'),
+    props: true
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: '404',
     component: () => import('../views/404.vue')

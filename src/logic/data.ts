@@ -16,10 +16,3 @@ export interface Friend {
   url: string
   description: string
 }
-
-export interface Blog {
-  image: string
-  tittle: string
-  url: string
-  brief: string
-}

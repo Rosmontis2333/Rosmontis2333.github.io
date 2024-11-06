@@ -1,0 +1,1 @@
+export const dataHost = 'http://' + window.location.host + '/docs/';
