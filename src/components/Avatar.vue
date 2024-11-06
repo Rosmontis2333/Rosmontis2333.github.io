@@ -90,12 +90,20 @@ export default class Avatar extends Vue {
 
       a {
         transition: all 0.5s $ease-in-out-cric;
+        margin: auto 1rem;
 
         &:hover {
           filter: drop-shadow(0px 0px 2px $flamingo);
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .avatar {
+    flex-direction: column;
+    margin-bottom: 2rem;
   }
 }
 </style>

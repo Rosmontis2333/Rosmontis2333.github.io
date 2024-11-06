@@ -125,4 +125,10 @@ export default class BlogList extends Vue {
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .blog-image {
+    display: none;
+  }
+}
 </style>
