@@ -1,26 +1,37 @@
 <script lang="ts">
-import BlogCard from '@/components/BlogCard.vue'
-import { Vue, Component } from 'vue-facing-decorator'
-import { Blog } from '@/logic/data'
-import blogs from '@/data/blogs.json'
+import { dataHost } from '@/logic/config'
+import { router } from '@/router'
+import { Component, Vue } from 'vue-facing-decorator'
 
-@Component({components: {BlogCard}})
-export default class BlogList extends Vue{
-  li = [] as Blog[]
+@Component({ components: {} })
+export default class BlogList extends Vue {
+  li = [] as string[]
 
-  mounted() {
-    this.li= blogs as Blog[]
+  created() {
+    fetch(dataHost + 'list.json')
+      .then((it) => it.text())
+      .then((it) => {
+        this.li = JSON.parse(it)
+      })
+  }
+
+  push(name: string) {
+    router.push({ path: `/docs/${name}` })
   }
 }
 </script>
 
 <template>
-<div class="blog-list">
-  <BlogCard v-for="l of li" :key="l.tittle" :tittle="l.tittle" :brief="l.brief" :image="l.image" :url="l.url" />
-</div>
+  <div class="blog-list">
+    <div class="blog" v-for="l of li" :key="l">
+      <h1 class="blog-title" v-on:click="push(l)">{{ l }}</h1>
+    </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
+@import '@/css/mocha';
+
 .blog-list {
   height: 100%;
   width: 100%;
@@ -28,6 +39,22 @@ export default class BlogList extends Vue{
   align-items: start;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:1rem;
+  gap: 1rem;
+
+  .blog {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid $rosewater;
+    border-top: 1px solid $rosewater;
+    padding: 2rem;
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $text;
+    }
+  }
 }
 </style>

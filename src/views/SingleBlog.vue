@@ -10,7 +10,7 @@ export default class SingleBlog extends Vue {
   computedCode = "";
 
   created() {
-    fetch(dataHost + name + '.json').then(it => it.text()).then(it => {
+    fetch(dataHost + this.name + '.json').then(it => it.text()).then(it => {
       this.computedCode = it
     })
   }

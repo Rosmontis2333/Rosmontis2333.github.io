@@ -28,8 +28,8 @@ const routes: Array<RouteRecordRaw> = [
     props: true
   },
   {
-    path: '/doc/:name',
-    name: 'doc',
+    path: '/docs/:name',
+    name: 'docs',
     component: () => import('../views/SingleBlog.vue'),
     props: true
   },
