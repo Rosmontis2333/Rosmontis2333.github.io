@@ -17,9 +17,16 @@ const list = [] as string[]
 
 const files = fs.readdirSync(docsPath)
 for (const file of files) {
-  const content = fs.readFileSync(path.join(docsPath, file)).toString()
+  let content = fs.readFileSync(path.join(docsPath, file)).toString()
+  content = handleDeleteLine(content)
   fs.writeFileSync(path.join(distPath, file.replace('.md', '.json')), renderMdx(autocorrect.formatFor(content, 'markdown')))
   list.push(file.replace('.md', ''))
 }
 
 fs.writeFileSync(path.join(distPath, 'list.json'), JSON.stringify(list))
+
+function handleDeleteLine(md: string): string {
+  if (!md.includes("~~")) return md;
+
+  return md.replace(/~~(.*?)~~/g, (match, text) => "<del>" + text + "</del>");
+}
