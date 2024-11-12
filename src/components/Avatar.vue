@@ -86,7 +86,7 @@ export default class Avatar extends Vue {
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      width: 50%;
+      width: 60%;
 
       a {
         transition: all 0.5s $ease-in-out-cric;
