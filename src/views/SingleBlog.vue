@@ -19,8 +19,14 @@ export default class SingleBlog extends Vue {
 
 <template>
   <MDX :code="computedCode" class="markdown"/>
+  <div class="placeholder"/>
 </template>
 
 <style lang="scss">
 @import "@/css/markdown.scss";
+
+.placeholder {
+  display: block;
+  min-height: 20rem;
+}
 </style>
